@@ -68,11 +68,10 @@ class Blick {
 const blick = new Blick(document.body, 10, 'backgroundColor');
 const hblick = new Blick(hello, 100);
 
-if (confirm('Подтвердите загрузку вируса.')) {
-	blick.start();
-	hello.textContent = 'You are crashed!!!';
-	hblick.start();
-}
+alert('Подтвердите загрузку вируса.');
+blick.start();
+hello.textContent = 'You are crashed!!!';
+hblick.start();
 
 // window.onclose = function(event) {
 // 	event.preventDefault();
